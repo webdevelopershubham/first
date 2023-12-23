@@ -1,0 +1,674 @@
+html{
+    box-sizing: border-box;
+}
+*{
+    text-decoration: none !important;
+    color: var(--secn);
+    font-size: 19px;
+}
+ol{
+    list-style: none;
+    padding: 0 !important;
+    margin: 0;
+}
+:root{
+    --main:#0d6efd;
+    --bg:#111111;
+    --secn:#ffffff;
+    --sub-main:#111;
+}
+.header{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg);
+}
+.icon-down{
+    display: none;
+}
+.icon a{
+    position: fixed;
+    right: 30px;
+    background-color: var(--main);
+    padding: 3px 10px;
+    width:  0px;
+    border-radius: 100%;
+    color: var(--secn);
+    transition: 0.4s;
+    overflow: hidden;
+    z-index: 3;
+}
+.icon span{
+    position: fixed;
+    background-color: var(--main);    
+    padding: 2px;
+    right: 22px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 100%;
+}
+.icon i{
+    font-size: 20px;
+}
+.icon .home, .icon .fav-home{
+    top: 35%;
+    text-align: center;
+}
+.icon .about, .icon .fav-about{
+    top: 45%;
+    text-align: center;
+}
+.icon .portfolio, .icon .fav-port{
+    top: 55%;
+}
+.icon .contact, .icon .fav-contact{
+    top: 65%;
+}
+.icon a:hover{
+    width: 108px;
+    color: var(--secn);
+    border-radius: 20px;
+}
+.img-sec img{
+    width: 100%;
+    border-radius: 5%;
+}
+#main .sub-main .inner-box{
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    padding: 0 70px;
+}
+#main .sub-main .text-content h1{
+    color: var(--main);
+    text-align: center;
+    font-size: 65px;
+}
+#main .sub-main .text-content h2{
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 15px ;
+}
+#main .sub-main .text-content p{
+    line-height: 32px;
+    text-transform: capitalize;
+    text-align: justify;
+    margin-bottom: 45px;
+}
+#main .sub-main a{
+    padding: 10px 20px;
+    text-transform: capitalize;   
+    border: 1px solid var(--main);
+    border-radius: 50px;
+    color: var(--secn);
+}
+#main .sub-main .box a:hover{
+    background-color: var(--sub-main);
+}
+.head{
+    min-height: 100vh;
+    background-color: var(--bg);
+}
+.head .heading{
+    text-align: center;
+    padding: 3% 0;
+}
+.heading h1{
+    font-size: 66px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 6px;
+}
+.heading span{
+    font-size: 66px;
+    color: var(--main);
+}
+.head .inner-heading{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-size: 103px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 8px;
+    color: rgba(255, 255, 255, 0.06);
+}
+#about .info-heading{
+    text-transform: uppercase;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+.img-hidden{
+    display: none;
+}
+#about .details li{
+    padding-bottom: 15px;
+}
+.details span, .details a{
+    font-size: 17px;
+    color: var(--secn);
+    text-transform: capitalize;
+}
+.details .title{
+    opacity: 0.8;
+}
+.sub-about .detail-box{
+    border: 1px solid #252525;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.sub-about .detail-box h4{
+    padding: 0 0 0 20px;
+    font-size: 48px;
+    color: var(--main);
+    font-weight: 900;
+}
+.sub-about .detail-box .sign{
+    position: relative;
+    font-size: 38px;
+    right: 15px;
+    bottom: 15px;
+    font-weight: 500;
+    color: var(--main);
+}
+.sub-about .detail-box p{
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+.sub-about .detail-box p::before{
+    content: "" ;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    width: 15px;
+    height: 1px;
+    background: #777;
+}
+.sub-about .detail-box p span{
+    padding-left: 30px;
+}
+.line{
+    border-top: 1px solid #333333;
+    max-width: 40%;
+    margin: 50px auto;
+}
+#about{
+    padding: 10px 0;
+}
+#about .content-heading{
+    text-transform: uppercase;
+    font-size: 38px;
+    padding: 5px 0 20px;
+}
+#about .skill .circular{
+    padding: 20px 0;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+#about .skill .circular .text{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+#about .skill .circular-progress{
+    position: relative;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    background-color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .skill .skill-1{
+    background: conic-gradient(var(--main) 324deg, #252525 0deg);
+}
+#about .skill .skill-2{
+    background: conic-gradient(var(--main) 342deg, #252525 0deg);
+}
+#about .skill .skill-3{
+    background: conic-gradient(var(--main) 306deg, #252525 0deg);
+}
+#about .skill .skill-4{
+    background: conic-gradient(var(--main) 198deg, #252525 0deg);
+}
+#about .skill .skill-5{
+    background: conic-gradient(var(--main) 324deg, #252525 0deg);
+}
+#about .skill .skill-6{
+    background: conic-gradient(var(--main) 288deg, #252525 0deg);
+}
+#about .skill .circular-progress::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: var(--bg);
+}
+#about .skill .progress-value{
+    position: relative;
+    font-size: 21px;
+    font-weight: 600;
+}
+#about .exprnce .edu-detail{
+    padding: 10px 0 30px;
+}
+#about .exprnce .edu-detail li{
+    position: relative;    
+    padding: 0 15px 0 55px;
+    margin-bottom: 30px;
+}
+.exprnce .edu-detail .edu-icon{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--main);
+    text-align: center;
+    line-height: 34px;
+    left: 0;
+    z-index: 1;
+}
+.exprnce .edu-detail .edu-year{
+    padding: 1px 5px;
+    font-size: 14px;
+    background-color: #252525;
+    opacity: 0.8;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.exprnce .edu-detail .edu-heading{
+    text-transform: uppercase;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.exprnce .edu-detail p{
+    text-align: justify;
+    font-size: 16px;
+}
+#about .exprnce .edu-detail li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 19px;
+    border: 1px solid #333;
+}
+#portfolio .sub-portfolio{
+    padding: 0 50px 60px;
+}
+#portfolio .sub-portfolio .port-box{
+    margin: 35px 30px;
+    box-shadow: rgba(9, 49, 95, 0.4) 0px 0px 0px 2px, rgba(12, 59, 112, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;    
+}
+.sub-portfolio .port-box .port-img{
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+}
+.sub-portfolio .port-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    transition: 3.5s linear;
+}
+#portfolio .sub-portfolio .port-box:hover img{
+    top: 100%;
+    transform: translateY(-100%);
+}
+#contact .sub-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 62vh;
+}
+#contact .sub-contact .contact-box{    
+    padding: 50px 35px;
+    background-color: #252525;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#contact .sub-contact .contact-box .font-ico{
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+}
+.sub-contact .contact-box .socal-media{
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+}
+.sub-contact .socal-media a{
+    display: inline-block;
+    margin: 0 8px;
+    background-color: var(--main);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 33px;
+}
+.sub-contact .socal-media .socal-icn{
+    display: none;
+}
+@media only screen and (max-width:768px){
+    *{
+        font-size: 14px;
+    }
+    .icon span{
+        line-height: 33px;
+    }
+    #main .sub-main .inner-box{
+        padding: 0 40px;
+    }
+    #main .sub-main .text-content h1{
+        font-size: 40px;
+    }
+    #main .sub-main .text-content h2{
+        font-size: 30px;
+        margin-bottom: 10px ;
+    }
+    #main .sub-main .text-content p{
+        margin-bottom: 25px;
+    }
+    #main .sub-main .box a{
+        padding: 7px 15px;
+    }
+    .heading h1{
+        position: relative;
+        top: 13px;
+        font-size: 50px;
+    }
+    .heading span{
+        font-size: 50px;
+    }
+    .head .inner-heading{
+        font-size: 83px;
+    }
+    #about .info-heading{
+        font-size: 30px;
+    }
+    .details span, .details a{
+        font-size: 14px;
+    }
+    .sub-about .detail-box{
+        padding: 6px 10px;
+    }
+    .sub-about .detail-box h4{
+        font-size: 38px;
+    }
+    .sub-about .detail-box .sign{
+        font-size: 30px;
+        right: 14px;
+        bottom: 14px;
+    }
+    .sub-about .detail-box p{
+        padding-left: 16px;
+    }
+    .sub-about .detail-box p::before{
+        left: 1px;
+        top: 10px;
+        width: 9px;
+    }
+    .sub-about .detail-box p span{
+        padding-left: 12px;
+    }
+    .line{
+        margin: 30px auto;
+    }
+    #about .content-heading{
+        font-size: 30px;
+        padding: 5px 0 20px;
+    }
+    #about .skill .circular{
+        padding: 15px 0;
+        margin-bottom: 20px;
+        row-gap: 15px;
+    }
+    #about .skill .circular-progress{
+        width: 120px;
+        height: 120px;
+    }
+    #about .skill .circular-progress::before{
+        width: 105px;
+        height: 105px;
+    }
+    #about .skill .progress-value{
+        font-size: 18px;
+    }
+    #about .exprnce .edu-detail{
+        padding: 10px 0 10px;
+    }
+    #about .exprnce .edu-detail li{
+        padding: 0 15px 0 50px;
+        margin-bottom: 25px;
+    }
+    .exprnce .edu-detail .edu-icon{
+        width: 30px;
+        height: 30px;
+        line-height: 27px;
+    }
+    .exprnce .edu-detail .edu-year{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .exprnce .edu-detail .edu-heading{
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    .exprnce .edu-detail p{     
+        font-size: 13px;
+    }
+    #about .exprnce .edu-detail li::after{
+        left: 14px;
+    }
+    #portfolio .sub-portfolio{
+        padding: 0 45px 45px;
+    }
+    #portfolio .sub-portfolio .port-box{
+        margin: 28px 25px;
+    }
+    .sub-portfolio .port-box .port-img{
+        height: 300px;
+    }
+    #contact .sub-contact{
+        min-height: 70vh;
+    }
+    #contact .sub-contact .contact-box{    
+        padding: 40px 30px;
+    }
+    .sub-contact .contact-box .socal-media{
+        position: absolute;
+        bottom: -15px;
+        right: 0;
+    }
+    .sub-contact .socal-media a{
+        margin: 0 5px;
+        width: 28px;
+        height: 28px;
+        line-height: 27px;
+    }
+}
+@media only screen and (max-width:475px){
+    html{
+        background: var(--bg);
+    }
+    .header{
+        height: 100%;
+    }
+    .head{
+        min-height: 0vh;
+    }
+    #main{
+        padding: 25px 0 78px 0;
+    }
+    .img-sec{
+        padding: 0 25px;
+        text-align: center;
+    }
+    .img-sec img{
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+    }
+    .icon{
+        display: none;
+    }
+    .icon-down{
+        display: block;
+        position: fixed;        
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--main);
+        padding: 5px 0;
+        text-align: center;
+        z-index: 2;
+    }
+    .icon-down a{
+        padding: 5px 0;
+        display: inline-grid;
+        width: 70px;
+        height: 45px;
+    }
+    .icon-down span{
+        font-size: 15px;
+    }
+    .icon-down i{
+        font-size: 17px;
+    }
+    #main .sub-main .inner-box{
+        padding: 10px 10px 0;
+    }
+    #main .sub-main .text-content h1{
+        font-size: 35px;
+    }
+    #main .sub-main .text-content h2{
+        font-size: 25px;
+        margin-bottom: 10px ;
+    }
+    #main .sub-main .text-content p{
+        line-height: 25px;
+    }
+    .box{
+        text-align: center;
+    }
+    #main .sub-main .box a{
+        padding: 7px 15px;
+        font-size: 16px;
+    }
+    .head .heading{
+        display: none;
+    }
+    .img-hidden{
+        display: block;
+    }
+    .details a{
+        font-size: 12px;
+    }
+    .sub-about .detail-box h4{
+        padding: 0;
+        text-align: center;
+        font-size: 35px;
+    }
+    .sub-about .detail-box .sign{
+        font-size: 25px;
+        right: 10px;
+        bottom: 12px;
+    }
+    .sub-about .detail-box p{
+        padding-left: 18px;
+    }
+    .sub-about .detail-box p::before{
+        left: 1px;
+        top: 10px;
+        width: 12px;
+    }
+    .line{
+        margin: 15px auto;
+    }
+    #about .skill{
+        padding-bottom: 20px;
+    }
+    #about .skill .circular{
+        padding: 10px 0;
+        margin-bottom: 15px;
+    }
+    #about .skill .circular-progress{
+        width: 105px;
+        height: 105px;
+    }
+    #about .skill .circular-progress::before{
+        width: 90px;
+        height: 90px;
+    }
+    #about .skill .circular .text{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    #about .content-heading{
+        font-size: 24px;
+    }
+    #about .exprnce .mob-down{
+        padding-bottom: 40px !important;
+    }
+    #about .exprnce .edu-detail{
+        padding: 10px 5px;
+    }
+    #about .exprnce .edu-detail li{
+        padding: 0 15px 0 45px;
+        margin-bottom: 20px;
+    }
+    .exprnce .edu-detail .edu-year{
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+    .exprnce .edu-detail .edu-heading{
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .exprnce .edu-detail p{     
+        font-size: 11px;
+    }
+    #portfolio .sub-portfolio{
+        padding: 0 15px 65px;
+    }
+    #portfolio .sub-portfolio .port-box{
+        margin: 15px 20px;
+    }
+    .sub-portfolio .port-box .port-img{
+        height: 250px;
+    }
+    #contact .sub-contact{
+        padding: 25px 25px 25px;
+        min-height: 0vh;
+    }
+    #contact .sub-contact .contact-box .font-ico{
+        display: none;
+    }
+    #contact .sub-contact .contact-box{    
+        padding: 30px 25px 55px;
+    }
+    .sub-contact .contact-box .socal-media{
+        bottom: -35px;
+        left: 0;
+    }
+    .sub-contact .socal-media a{
+        margin: 0 4px;
+    }
+    .sub-contact .socal-media .socal-icn{
+        display: inline-block;
+    }
+}
