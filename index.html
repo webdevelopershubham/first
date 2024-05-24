@@ -22,7 +22,7 @@
             </div>
 
             <div class="icon-down">
-                <a href="index.html" class="fav-home-down"><i class="fa-solid fa-house"></i><span class="home-down">Home</span></a>
+                <a href="index.html" class="fav-home-down"><i class="fa-solid fa-house active"></i><span class="home-down">Home</span></a>
                 <a href="about.html" class="fav-about-down"><i class="fa-solid fa-user"></i><span class="about-down">About</span></a>
                 <a href="portfolio.html" class="fav-port-down"><i class="fa-solid fa-briefcase"></i><span class="portfolio-down">Portfolio</span></a>
                 <a href="contact.html" class="fav-contact-down"><i class="fa-solid fa-envelope fa-shake"></i><span class="contact-down">Contact</span></a>
@@ -64,6 +64,8 @@
 
     <script>
 
+        // ============  typed Js  ============
+
         var typed = new Typed(".multiple-text",{
             strings: ["WEB DESIGNER", "UI UX DESIGNS", "FRONTEND DEVELOPER"],
             typeSpeed: 100,
@@ -71,6 +73,18 @@
             backDelay: 1000,
             loop:true
         });
+
+        // ============  Active Class  ============
+
+        // let a = document.getElementsByClassName("active")
+        // let links = document.getElementsByTagName("i")
+
+        // for(i=0; i<links.length; i++){
+        //     links[i].addEventListener("click",()=>{
+        //         a[0].className = a[0].className.replace("active","")
+        //         links[0].classList.add('active')
+        //     })
+        // }
 
     </script>
 

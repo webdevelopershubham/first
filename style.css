@@ -94,6 +94,9 @@ ol{
     color: var(--secn);
     border-radius: 20px;
 }
+.icon-down .active{
+    color: black;
+}
 .img-sec img{
     width: 100%;
     border-radius: 5%;
@@ -598,6 +601,9 @@ ol{
     }
     #main .sub-main .inner-box{
         padding: 10px 10px 0;
+    }
+    #main .sub-main .text-content{
+        margin-top: 8px;
     }
     #main .sub-main .text-content h1{
         font-size: 35px;
