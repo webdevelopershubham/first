@@ -38,6 +38,17 @@ ol{
     transition: 0.4s;
     overflow: hidden;
     z-index: 3;
+    opacity: 0;
+    animation: slideTwo 2.5s ease forwards;
+    animation-delay: calc(.3s * var(--a));
+}
+@keyframes slideTwo{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .icon span{
     position: fixed;
@@ -48,6 +59,18 @@ ol{
     height: 35px;
     text-align: center;
     border-radius: 100%;
+    animation: slideOne .5s ease forwards;
+    animation-delay: calc(.3s * var(--i));
+}
+@keyframes slideOne{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .icon i{
     font-size: 20px;
@@ -74,9 +97,21 @@ ol{
 .img-sec img{
     width: 100%;
     border-radius: 5%;
+    animation: slideRight 1.5s ease forwards;
+    opacity: 0;
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 #main .sub-main .inner-box{
-    display: flex;
+       display: flex;
     align-items: center;
     min-height: 100%;
     padding: 0 70px;
@@ -85,6 +120,18 @@ ol{
     color: var(--main);
     text-align: center;
     font-size: 65px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 #main .sub-main .text-content h2{
     text-align: center;
